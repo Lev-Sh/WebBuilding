@@ -2,6 +2,22 @@ body {
     background-color: rgba(24, 24, 24, 120);
 }
 
-h1 {
-    color: antiquewhite;
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
 }
