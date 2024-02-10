@@ -9,21 +9,12 @@ text = 'Человечество вырастает из детства.Чело
 def promotion():
     return '!<br><br>'.join('.<br><br>'.join(text.split('.')).split('!'))
 
+
 @app.route('/promotion_image')
 def promotion_image():
-    with open('file.txt', 'r') as file:
+    with open('hmain.html', 'r', encoding='utf-8') as file:
         data = file.read().replace('\n', '')
     return data
-
-
-@app.route('/image_mars')
-def image_mars():
-    return '<h1>Жди нас, Марс!</h1></br><img scr="images/mars_vremya.png" alt="mars_image lol"></br><p>Вот она какая, красная планета.</p>'
-
-
-@app.route('/promotion_image')
-def image_mars():
-    return open('hmain.html', 'r')
 
 
 if __name__ == '__main__':
