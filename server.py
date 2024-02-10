@@ -10,8 +10,14 @@ def promotion():
     return '!<br><br>'.join('.<br><br>'.join(text.split('.')).split('!'))
 
 
+
+@app.route('/image_mars')
+def image_mars():
+    return '<h1>Жди нас, Марс!</h1></br><img scr="images/mars_vremya.png" alt="mars_image lol"></br><p>Вот она какая, красная планета.</p>'
+
+
 @app.route('/promotion_image')
-def promotion_image():
+def image_marss():
     with open('hmain.html', 'r', encoding='utf-8') as file:
         data = file.read().replace('\n', '')
     return data
