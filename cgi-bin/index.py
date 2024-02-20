@@ -1,1 +1,8 @@
-print('<h1>Hello</h1>')
+
+def main() -> int:
+    for i in range(0, 10, 1):
+        print(i)
+    return 0
+
+
+main()
