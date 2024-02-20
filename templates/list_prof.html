@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if type_list in ('ul', 'ol') %}
+        <{{ type_list }}>
+            {% for profession in professions %}
+                <li>{{ profession }}</li>
+            {% endfor %}
+        </{{ type_list }}>
+    {% else %}
+    <div class="alert label-danger">Введён неверный параметр</div>
+    {% endif %}
+
+{% endblock %}
